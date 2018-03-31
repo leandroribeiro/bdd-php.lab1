@@ -22,7 +22,7 @@ class FeatureContext implements Context
     }
 
     /**
-     * @Given there is a(n) :$product, which costs £:$price
+     * @Given there is a(n) :product, which costs $:price
      */
     public function thereIsAWhichCostsPs($product, $price)
     {
@@ -50,7 +50,7 @@ class FeatureContext implements Context
     }
 
     /**
-     * @Then the overall basket price should be £:price
+     * @Then the overall basket price should be $:price
      */
     public function theOverallBasketPriceShouldBePs($price)
     {
