@@ -1,0 +1,23 @@
+# behat.yml
+
+#default:
+#  autoload:
+#    '': %paths.base%/../features/bootstrap
+#  suites:
+#    default:
+#      paths:
+#        - %paths.base%/../features
+#      contexts:
+#        - FeatureContext
+#  extensions:
+#    Behat\MinkExtension:
+#      base_url:  'http://localhost/got/'
+#      default_session: selenium2
+#      browser_name: 'chrome'
+#      selenium2:
+#        wd_host: "http://127.0.0.1:4444/wd/hub"
+
+#     sessions:
+#       default:
+#         goutte: ~
+

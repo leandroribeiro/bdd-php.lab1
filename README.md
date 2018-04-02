@@ -56,3 +56,12 @@ run.bat
 ## Authors
 
 * **Leandro Ribeiro**
+
+## Useful articles
+
+* https://stackoverflow.com/questions/26658511/behat-3-featurecontext-context-class-not-found-and-can-not-be-used?rq=1
+* https://stackoverflow.com/questions/32880568/behat-mink-selenium2-chromedriver-do-not-launch-chrome-browser
+* http://www.qa-tools.io
+* https://github.com/lmc-eu/steward/wiki/Selenium-server-&-browser-drivers
+* https://knpuniversity.com/screencast/behat/install
+* http://docs.behat.org/en/v2.5/cookbook/intercepting_the_redirections.html

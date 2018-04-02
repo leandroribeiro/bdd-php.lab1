@@ -2,13 +2,14 @@
 
 use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Behat\Context\Context;
+use Behat\MinkExtension\Context\MinkContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
 
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext implements Context
+class FeatureContext extends MinkContext
 {
 
     private $shelf;
@@ -43,6 +44,13 @@ class FeatureContext implements Context
      */
     public function iShouldHaveProductInTheBasket($count)
     {
+        $this->visitPath('/');
+        
+        $pageTitle = $this->getSession()->getPage()->find('css', '.panel-heading');
+
+        PHPUnit_Framework_Assert::assertEquals('List of Game of Thrones Characters',$pageTitle->getText());
+        #PHPUnit_Framework_Assert::assertEquals('QUALQUER COISA',$pageTitle->getText());
+
         PHPUnit_Framework_Assert::assertCount(
             intval($count),
             $this->basket
